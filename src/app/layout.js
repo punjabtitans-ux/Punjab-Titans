@@ -1,14 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+import CursorBall from "./Components/CursorBall";
+import Header from "./Components/Uiux/Header";
+const primaryfont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Poppins-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -20,8 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${primaryfont.variable} antialiased`}
       >
+        <div className="absolute top-0 w-full z-50">
+        <Header/>
+        </div>
+        <CursorBall />
         {children}
       </body>
     </html>
