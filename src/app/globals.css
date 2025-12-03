@@ -13,13 +13,17 @@
 }
 body{
   background: #000;
-  max-width: 1980px;
-  margin: auto;
+
   font-family: var(--font-poppins);
 }
 .cus_container {
-   max-width: 1740px;
+   max-width: 1795px;
    margin: auto;
    padding-inline: 3%;
 }
 
+.custom-next,
+.custom-prev {
+  z-index: 9999 !important;
+  position: relative;
+}

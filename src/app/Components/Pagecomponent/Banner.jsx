@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="relative">
       <div
-        className="bg-cover bg-no-repeat bg-center h-screen max-h-[1024px]"
+        className="bg-cover bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bannerbg.src})` }}
       >
         <div className="max-w-[97%] m-auto grid grid-cols-2">
@@ -39,7 +39,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="absolute overflow-hidden w-full bottom-12 2xl:bottom-14">
+      <div className="absolute overflow-hidden w-full bottom-1">
         <Bannermarque />
       </div>
     </div>

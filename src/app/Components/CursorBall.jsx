@@ -23,13 +23,9 @@ export default function CursorBall() {
         transition: "transform 0.30s ease-out",
       }}
     >
-      <Image
-        src={ballimage}
-        alt="ball"
-        width={1000}
-        height={500}
-        className="w-full h-full rounded-[35px]"
-      />
+      <div className="w-8 h-8 bg-[#e4e4e465] rounded-[50%]"> 
+
+      </div>
     </div>
   );
 }

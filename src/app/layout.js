@@ -21,14 +21,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${primaryfont.variable} antialiased`}
+      <body className={`${primaryfont.variable} antialiased`}
+         cz-shortcut-listen="true"
       >
-        <div className="absolute top-0 w-full z-50">
-        <Header/>
+        <div className="max-w-[1980px] m-auto relative">
+          <div className="absolute top-0 w-full z-50">
+            <Header />
+          </div>
+          <CursorBall />
+          {children}
         </div>
-        <CursorBall />
-        {children}
       </body>
     </html>
   );
