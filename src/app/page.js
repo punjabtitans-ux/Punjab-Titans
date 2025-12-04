@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Banner from "./Components/Pagecomponent/Banner";
-import Bannermarque from "./Components/Pagecomponent/Bannermarque";
 import Squadslider from "./Components/Pagecomponent/Squadslider";
 import Latestnews from "./Components/Pagecomponent/Latestnews";
+import PopularEvents from "./Components/Pagecomponent/PopularEvents";
+import SpotLight from "./Components/Pagecomponent/SpotLight";
+import Legacy from "./Components/Pagecomponent/Legacy";
 
 export default function Home() {
   return (
@@ -11,6 +13,9 @@ export default function Home() {
         <Banner />
         <Squadslider/>
         <Latestnews />
+        <PopularEvents />
+        <SpotLight />
+        <Legacy />
       </div>
     </div>
   );

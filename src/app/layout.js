@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import CursorBall from "./Components/CursorBall";
 import Header from "./Components/Uiux/Header";
+import Footer from "./Components/Uiux/Footer";
 const primaryfont = localFont({
   src: [
     {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           </div>
           <CursorBall />
           {children}
+          <Footer/>
         </div>
       </body>
     </html>
