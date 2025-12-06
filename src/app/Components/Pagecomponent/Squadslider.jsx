@@ -27,27 +27,29 @@ const Squadslider = () => {
                 color={"text-secondary"}
               />
             </div>
-            <div className="absolute left-[5%] bottom-[10%]">
-              <Image
-                src={arrowleft}
-                alt="left"
-                width={1000}
-                height={500}
-                className="w-[50px] custom-prev cursor-pointer"
-              />
-            </div>
-            <div className="absolute  right-[5%] bottom-[10%]">
-              <Image
-                src={arrowlright}
-                alt="left"
-                width={1000}
-                height={500}
-                className="w-[50px] custom-next cursor-pointer"
-              />
+            <div className="flex justify-between pt-4">
+              <div className="xl:absolute left-[5%] bottom-0  xl:bottom-[10%]">
+                <Image
+                  src={arrowleft}
+                  alt="left"
+                  width={1000}
+                  height={500}
+                  className="w-[50px] custom-prev cursor-pointer"
+                />
+              </div>
+              <div className="xl:absolute  right-[5%] bottom-0  xl:bottom-[10%]">
+                <Image
+                  src={arrowlright}
+                  alt="left"
+                  width={1000}
+                  height={500}
+                  className="w-[50px] custom-next cursor-pointer"
+                />
+              </div>
             </div>
           </div>
 
-          <div className=" 2xl:py-16">
+          <div className="py-12 2xl:py-16">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               speed={1000}
@@ -59,7 +61,7 @@ const Squadslider = () => {
               navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
               spaceBetween={20}
               breakpoints={{
-                320: { slidesPerView: 2 },
+                320: { slidesPerView: 1 },
                 768: { slidesPerView: 3 },
                 1024: { slidesPerView: 4 },
                 1280: { slidesPerView: 6 },
@@ -69,7 +71,7 @@ const Squadslider = () => {
             >
               {Squaddata.map((data, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-[#0A0A0A] py-6 px-3">
+                  <div className="bg-[#0A0A0A] py-6 px-3 max-w-[80%] m-auto">
                     <Image
                       src={data.player_image}
                       alt={data.player_name}
@@ -77,7 +79,7 @@ const Squadslider = () => {
                       height={500}
                       className="max-w-[177px] 2xl:max-w-[197px] m-auto"
                     />
-                    <p className="text-xl 2xl:text-[22px] text-white text-center pt-4">
+                    <p className="text-lg  xl:text-xl 2xl:text-[22px] text-white text-center pt-4">
                       {data.player_name}
                     </p>
                   </div>

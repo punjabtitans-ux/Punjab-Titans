@@ -7,7 +7,7 @@ import Description from "../Uiux/Description";
 const PopularEvents = () => {
   return (
     <div>
-      <div className="cus_container py-16">
+      <div className="cus_container py-12 md:py-16">
         <div className="flex justify-between">
           <Title title={"Popular Events"} color={"text-white"} />
           <Button button_name={"Read More"} />

@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 const Bannermarque = () => {
   return (
     <div className=" bg-primary">
-      <div className=" py-6 2xl:py-10 bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(255,255,255,0)_100%)]">
+      <div className="py-4 lg:py-6 2xl:py-10 bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(255,255,255,0)_100%)]">
         <Marquee>
           {[
             "Playing in Legends 90",

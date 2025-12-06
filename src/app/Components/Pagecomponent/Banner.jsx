@@ -1,33 +1,71 @@
+"use client";
 import React from "react";
 import bannerbg from "../../../../public/images/bannerbg.webp";
 import bannerright from "../../../../public/images/bannerright.webp";
 import Image from "next/image";
 import Description from "../Uiux/Description";
 import Bannermarque from "./Bannermarque";
+import SplitText from "../Uiux/SplitText";
+
 const Banner = () => {
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
+
   return (
     <div className="relative">
+      {/* Background Wrapper */}
       <div
-        className="bg-cover bg-no-repeat bg-center "
+        className="bg-cover bg-no-repeat bg-center pt-12 md:pt-0"
         style={{ backgroundImage: `url(${bannerbg.src})` }}
       >
-        <div className="max-w-[97%] m-auto grid grid-cols-2">
+        <div className="max-w-[90%] 2xl:max-w-[97%] m-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
+          
+          {/* Left Side Content */}
           <div className="flex items-center justify-center">
             <div>
-              <h1 className="text-[162px] 2xl:text-[192px] leading-[170px] 2xl:leading-[200px] font-black uppercase text-[#FCF0D6] tracking-[-4%]">
-                Punjabi
-              </h1>
-              <h3 className="text-[100px] 2xl:text-[128px] leading-[110px] 2xl:leading-[138px] font-semibold text-white pb-8">
-                Aa Gye Oyee
-              </h3>
+              <SplitText
+                text="Panjabi"
+                className="title-text"
+                delay={200}
+                duration={0.9}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 80 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
+                tag="h1"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+
+              <SplitText
+                text="Aa Gye Oyee"
+                className="sub-title"
+                delay={300}
+                duration={1.5}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                tag="h2"
+                textAlign=""
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+
               <Description
                 description={
-                  "A new chapter begins. New rivalries. New  <br/> heroes. New victories"
+                  "A new chapter begins. New rivalries. New <br/> heroes. New victories"
                 }
-                color={"text-secondary"}
+                color={"text-secondary text-center md:text-start"}
               />
             </div>
           </div>
+
+          {/* Right Side Image */}
           <div className="relative z-60">
             <Image
               src={bannerright}
@@ -39,7 +77,9 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="absolute overflow-hidden w-full bottom-1">
+
+      {/* Bottom Marquee */}
+      <div className="absolute overflow-hidden w-full -bottom-5 xl:bottom-0 2xl:bottom-1">
         <Bannermarque />
       </div>
     </div>

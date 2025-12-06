@@ -11,11 +11,11 @@ export default function Home() {
     <div>
       <div className="pt-16">
         <Banner />
-        <Squadslider/>
-        <Latestnews />
+        <Squadslider />
+        {/*   <Latestnews />
         <PopularEvents />
         <SpotLight />
-        <Legacy />
+        <Legacy /> */}
       </div>
     </div>
   );

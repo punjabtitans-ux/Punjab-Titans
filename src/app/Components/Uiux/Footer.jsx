@@ -71,7 +71,7 @@ const Footer = () => {
                   />
                   <button
                     fdprocessedid="rkyyh7"
-                    className="cursor-pointer uppercase text-xl border-none outline-none px-12 rounded-2xl py-4 bg-black text-white"
+                    className="cursor-pointer uppercase text-xl border-none outline-none px-6 2xl:px-12 rounded-2xl py-4 bg-black text-white"
                     type="submit"
                   >
                     Subcribe Now

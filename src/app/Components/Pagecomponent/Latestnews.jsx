@@ -8,7 +8,7 @@ import googleapp from "../../../../public/images/googleapp.webp";
 const Latestnews = () => {
   return (
     <div>
-      <div className="cus_container py-16">
+      <div className="cus_container py-12 md:py-16">
         <div className="flex justify-between">
           <Title title={"Latest News & Updates"} color={"text-white"} />
 
