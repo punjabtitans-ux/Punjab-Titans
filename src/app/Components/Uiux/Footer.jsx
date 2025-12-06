@@ -63,7 +63,7 @@ const Footer = () => {
                     type="email"
                     name=""
                     id=""
-                    className="outline-none lg:w-[50%] text-lg 2xl:text-xl bg-white p-3 rounded-xl"
+                    className="outline-none w-full lg:w-[50%] text-lg 2xl:text-xl bg-white p-3 rounded-xl"
                     placeholder="Enter Your Email"
                     value={Email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -130,13 +130,13 @@ const Footer = () => {
       </div>
        <div className="pt-8 md:pt-12 2xl:pt-16 pb-6 2xl:pb-8">
         <div className="cus_container">
-          <div className="max-w-[90%] m-auto flex flex-col md:flex-row items-center justify-between">
+          <div className="md:max-w-[90%] m-auto flex flex-col md:flex-row items-center justify-between">
             <div>
-              <p className="text-base text-white">© Punjab Titans 2025 All rights reserved</p>
+              <p className="text-sm md:text-base text-white">© Punjab Titans 2025 All rights reserved</p>
             </div>
             <div className="flex gap-4 lg:gap-8 xl:gap-16">
-              <span className="text-base text-white">Terms of Service</span>
-              <span className="text-base text-white">Privacy Policy</span>
+              <span className="text-sm md:text-base text-white">Terms of Service</span>
+              <span className="text-sm md:text-base text-white">Privacy Policy</span>
             </div>
           </div>
         </div>
