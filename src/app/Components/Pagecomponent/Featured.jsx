@@ -10,12 +10,12 @@ import Image from "next/image";
 const Featured = () => {
   return (
     <div>
-      <div className="cus_container pt-16">
+      <div className="cus_container pt-12 lg:pt-16">
         <div className="text-center">
           <Title title={"Featured In"} color={"text-white"} />
         </div>
 
-        <div className="max-w-7xl m-auto grid grid-cols-6 pt-12 gap-4">
+        <div className="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-6 pt-6 md:pt-12 gap-2 md:gap-4">
           {[
             featured1,
             featured2,
@@ -30,7 +30,7 @@ const Featured = () => {
                 alt="Featured"
                 width={2000}
                 height={500}
-                className=""
+                className="max-w-[90%] m-auto"
               />
             </div>
           ))}

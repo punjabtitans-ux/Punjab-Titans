@@ -10,12 +10,12 @@ import Image from "next/image";
 const Sponsors = () => {
   return (
     <div>
-      <div className="cus_container pt-12">
+      <div className="cus_container lg:pt-12">
         <div className="text-center">
           <Title title={"Our Sponsors"} color={"text-white"} />
         </div>
 
-        <div className="max-w-7xl m-auto grid grid-cols-6 pt-12 gap-6">
+        <div className="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-6 pt-6 md:pt-12 gap-6">
           {[
             Sponsor1,
             Sponsor2,

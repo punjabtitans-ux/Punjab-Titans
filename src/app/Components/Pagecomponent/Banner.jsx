@@ -11,13 +11,13 @@ const Banner = () => {
         className="bg-cover bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bannerbg.src})` }}
       >
-        <div className="max-w-[97%] m-auto grid grid-cols-2">
-          <div className="flex items-center justify-center">
-            <div>
-              <h1 className="text-[162px] 2xl:text-[192px] leading-[170px] 2xl:leading-[200px] font-black uppercase text-[#FCF0D6] tracking-[-4%]">
+        <div className="max-w-[97%] m-auto grid md:grid-cols-2 gap-8">
+          <div className="flex items-center justify-center pt-12">
+            <div className="text-center md:text-start">
+              <h1 className="title-text">
                 Punjabi
               </h1>
-              <h3 className="text-[100px] 2xl:text-[128px] leading-[110px] 2xl:leading-[138px] font-semibold text-white pb-8">
+              <h3 className="sub-title">
                 Aa Gye Oyee
               </h3>
               <Description
@@ -39,7 +39,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="absolute overflow-hidden w-full bottom-1">
+      <div className="absolute overflow-hidden w-full -bottom-4 lg:bottom-1">
         <Bannermarque />
       </div>
     </div>

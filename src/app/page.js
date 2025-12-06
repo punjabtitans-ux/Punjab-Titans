@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <div className="pt-16">
         <Banner />
-        <Squadslider/>
+        <Squadslider />
         <Latestnews />
         <PopularEvents />
         <SpotLight />
