@@ -12,10 +12,10 @@ export default function Home() {
       <div className="pt-16">
         <Banner />
         <Squadslider />
-        {/*   <Latestnews />
+        <Latestnews />
         <PopularEvents />
         <SpotLight />
-        <Legacy /> */}
+        <Legacy />
       </div>
     </div>
   );

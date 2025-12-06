@@ -25,13 +25,13 @@ export default function RootLayout({ children }) {
       <body className={`${primaryfont.variable} antialiased`}
          cz-shortcut-listen="true"
       >
-        <div className="max-w-[1980px] m-auto relative ">
+        <div className="max-w-[1980px] m-auto relative">
           <div className="absolute top-0 w-full z-50">
             <Header />
           </div>
           <CursorBall />
           {children}
-          {/* <Footer/> */}
+          <Footer/>
         </div>
       </body>
     </html>

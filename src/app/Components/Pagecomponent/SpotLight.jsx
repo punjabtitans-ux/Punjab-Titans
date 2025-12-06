@@ -16,7 +16,7 @@ const SpotLight = () => {
   return (
     <div className="bg-primary">
       <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.57)_0%,rgba(0,0,0,1)_83%)]">
-        <div className="max-w-[1820px] m-auto px-[3%] py-16 ">
+        <div className="max-w-[1820px] m-auto px-[3%] py-12 md:py-16 ">
           <div className="text-center relative">
             <Title
               title={"In the Spotlight"}
@@ -31,27 +31,29 @@ const SpotLight = () => {
                 color={"text-secondary"}
               />
             </div>
-            <div className="absolute left-[5%] bottom-[10%]">
-              <Image
-                src={arrowleft}
-                alt="left"
-                width={1000}
-                height={500}
-                className="w-[50px] custom-prev cursor-pointer"
-              />
-            </div>
-            <div className="absolute  right-[5%] bottom-[10%]">
-              <Image
-                src={arrowlright}
-                alt="left"
-                width={1000}
-                height={500}
-                className="w-[50px] custom-next cursor-pointer"
-              />
+            <div className="flex justify-between pt-4">
+              <div className="lg:absolute left-[5%] bottom-[10%]">
+                <Image
+                  src={arrowleft}
+                  alt="left"
+                  width={1000}
+                  height={500}
+                  className="w-[50px] custom-prev cursor-pointer"
+                />
+              </div>
+              <div className="lg:absolute  right-[5%] bottom-[10%]">
+                <Image
+                  src={arrowlright}
+                  alt="left"
+                  width={1000}
+                  height={500}
+                  className="w-[50px] custom-next cursor-pointer"
+                />
+              </div>
             </div>
           </div>
 
-          <div className=" pt-16">
+          <div className="pt-6 md:pt-12 lg:pt-16">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               speed={1000}
@@ -64,13 +66,16 @@ const SpotLight = () => {
               spaceBetween={40}
               breakpoints={{
                 320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
+                1280: { slidesPerView: 2 },
               }}
               className="px-10"
             >
               {spotlightdata.map((data, index) => (
                 <SwiperSlide key={index}>
-                <div className="grid grid-cols-2 bg-[#171717] rounded-3xl" key={index}>
+                  <div
+                    className="grid md:grid-cols-2 bg-[#171717] rounded-3xl"
+                    key={index}
+                  >
                     <Image
                       src={data.spolight_poster}
                       alt="poster"
@@ -78,9 +83,9 @@ const SpotLight = () => {
                       height={500}
                       className=""
                     />
-                    <div className="px-6 flex items-center">
+                    <div className="px-6 py-6 md:py-0 flex items-center">
                       <div>
-                        <h2 className=" text-[35px] 2xl:text-[45px] text-white font-black leading-[45px] 2xl:leading-[55px] mb-2">
+                        <h2 className="text-3xl md:text-[35px] 2xl:text-[45px] text-white font-black md:leading-[45px] 2xl:leading-[55px] mb-2">
                           {data.spolight_title}
                         </h2>
                         <span className="text-base 2xl:text-lg text-secondary font-light line-clamp-3">

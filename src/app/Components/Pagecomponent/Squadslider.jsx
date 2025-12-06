@@ -27,29 +27,29 @@ const Squadslider = () => {
                 color={"text-secondary"}
               />
             </div>
-            <div className="flex justify-between pt-4">
-              <div className="xl:absolute left-[5%] bottom-0  xl:bottom-[10%]">
-                <Image
-                  src={arrowleft}
-                  alt="left"
-                  width={1000}
-                  height={500}
-                  className="w-[50px] custom-prev cursor-pointer"
-                />
-              </div>
-              <div className="xl:absolute  right-[5%] bottom-0  xl:bottom-[10%]">
-                <Image
-                  src={arrowlright}
-                  alt="left"
-                  width={1000}
-                  height={500}
-                  className="w-[50px] custom-next cursor-pointer"
-                />
-              </div>
+           <div className="flex justify-between py-2">
+             <div className="xl:absolute left-[5%] bottom-[10%]">
+              <Image
+                src={arrowleft}
+                alt="left"
+                width={1000}
+                height={500}
+                className="w-[50px] custom-prev cursor-pointer"
+              />
             </div>
+            <div className="xl:absolute  right-[5%] bottom-[10%]">
+              <Image
+                src={arrowlright}
+                alt="left"
+                width={1000}
+                height={500}
+                className="w-[50px] custom-next cursor-pointer"
+              />
+            </div>
+           </div>
           </div>
 
-          <div className="py-12 2xl:py-16">
+          <div className=" py-6 md:py-12 2xl:py-16">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               speed={1000}
@@ -71,7 +71,7 @@ const Squadslider = () => {
             >
               {Squaddata.map((data, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-[#0A0A0A] py-6 px-3 max-w-[80%] m-auto">
+                  <div className="bg-[#0A0A0A] py-6 px-3">
                     <Image
                       src={data.player_image}
                       alt={data.player_name}
@@ -79,7 +79,7 @@ const Squadslider = () => {
                       height={500}
                       className="max-w-[177px] 2xl:max-w-[197px] m-auto"
                     />
-                    <p className="text-lg  xl:text-xl 2xl:text-[22px] text-white text-center pt-4">
+                    <p className="text-xl 2xl:text-[22px] text-white text-center pt-4">
                       {data.player_name}
                     </p>
                   </div>

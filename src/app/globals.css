@@ -10,7 +10,7 @@
   --color-secondary: #b2b2b2;
   --color-ternary: #cfad4a;
   /* --breakpoint-xl: 1330px; */
-  --breakpoint-2xl: 1660px; 
+  /* --breakpoint-2xl: 1660px ;  */
 }
 body {
   background: #000;
@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1661px) {
   .title-text {
     font-size: 155px;
     line-height: 165px;
