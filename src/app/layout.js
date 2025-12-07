@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
          cz-shortcut-listen="true"
       >
         <div className="max-w-[1980px] m-auto relative">
-          <div className="absolute top-0 w-full z-50">
+          <div className="absolute top-0 w-full">
             <Header />
           </div>
           <CursorBall />

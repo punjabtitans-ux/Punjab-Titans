@@ -39,7 +39,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="absolute overflow-hidden w-full -bottom-4 lg:bottom-1">
+      <div className="absolute overflow-hidden w-full -bottom-1 md:-bottom-4 lg:bottom-1">
         <Bannermarque />
       </div>
     </div>

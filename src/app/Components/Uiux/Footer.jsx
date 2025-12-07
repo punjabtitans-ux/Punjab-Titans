@@ -63,7 +63,7 @@ const Footer = () => {
                     type="email"
                     name=""
                     id=""
-                    className="outline-none lg:w-[50%] text-lg 2xl:text-xl bg-white p-3 rounded-xl"
+                    className="outline-none w-full lg:w-[50%] text-lg 2xl:text-xl bg-white p-3 rounded-xl"
                     placeholder="Enter Your Email"
                     value={Email}
                     onChange={(e) => setEmail(e.target.value)}
