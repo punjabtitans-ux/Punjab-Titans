@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
       <body className={`${primaryfont.variable} antialiased`}>
         <Provider>
           <div className="max-w-[1980px] m-auto relative">
-            <div className="absolute top-0 w-full">
+            {/* <div className="absolute top-0 w-full"> */}
               <Header />
-            </div>
+            {/* </div> */}
 
             <CursorBall />
 

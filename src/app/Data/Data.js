@@ -184,3 +184,78 @@ export const spotlightdata = [
     spotlight_description: `Unity powers another strong finish Perfect chemistry and fearless teamwork lifted Punjab Titans to yet another impressive win. With every player contributing, the squad sealed the match with confidence.`,
   },
 ];
+
+export const headerMenu = [
+  {
+    id: 1,
+    title: "Home",
+    path: "/",
+    hasDropdown: false,
+  },
+  {
+    id: 2,
+    title: "Our Squad",
+    path: "/our-squad",
+    hasDropdown: false,
+  },
+  {
+    id: 3,
+    title: "Events",
+    path: "/events",
+    hasDropdown: false,
+  },
+  {
+    id: 4,
+    title: "Leagues",
+    path: "/leagues",
+    hasDropdown: true,
+    dropdownItems: [
+      { title: "League 1", path: "/leagues/league-1" },
+      { title: "League 2", path: "/leagues/league-2" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Gallery",
+    path: "/gallery",
+    hasDropdown: true,
+    dropdownItems: [
+      { title: "Photos", path: "/gallery/photos" },
+      { title: "Videos", path: "/gallery/videos" },
+    ],
+  },
+  {
+    id: 6,
+    title: "Latest Updates",
+    path: "/latest-updates",
+    hasDropdown: true,
+    dropdownItems: [
+      { title: "News", path: "/latest-updates/news" },
+      { title: "Announcements", path: "/latest-updates/announcements" },
+    ],
+  },
+];
+
+// photogallery data
+
+export const photosdata = [
+  "/images/photos/photogallery1.webp",
+  "/images/photos/photogallery2.webp",
+  "/images/photos/photogallery3.webp",
+  "/images/photos/photogallery4.webp",
+
+  "/images/photos/photogallery1.webp",
+  "/images/photos/photogallery2.webp",
+  "/images/photos/photogallery3.webp",
+  "/images/photos/photogallery4.webp",
+
+  "/images/photos/photogallery1.webp",
+  "/images/photos/photogallery2.webp",
+  "/images/photos/photogallery3.webp",
+  "/images/photos/photogallery4.webp",
+
+  "/images/photos/photogallery1.webp",
+  "/images/photos/photogallery2.webp",
+  "/images/photos/photogallery3.webp",
+  "/images/photos/photogallery4.webp",
+];

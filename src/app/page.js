@@ -9,9 +9,8 @@ import Legacy from "./Components/Pagecomponent/Legacy";
 export default function Home() {
   return (
     <div>
-      <div className="pt-16">
+      <div className="">
         <Banner />
-        
         <Squadslider />
         <Latestnews />
         <PopularEvents />
