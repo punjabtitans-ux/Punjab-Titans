@@ -97,6 +97,7 @@ const Login = () => {
       // ✅ LOGIN SUCCESS → SESSION
       const userData = { firstName, lastName, email };
       localStorage.setItem("user", JSON.stringify(userData));
+      window.dispatchEvent(new Event("user-login"));
       setUser(userData);
       setStep("success");
     } catch {
@@ -239,6 +240,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-

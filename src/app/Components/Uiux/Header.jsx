@@ -14,25 +14,30 @@ import { headerMenu } from "@/app/Data/Data";
 const Header = () => {
   const [user, setUser] = useState(null);
 
-  // 🔹 USER LOAD FROM LOCAL STORAGE
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    function loadUser() {
+      const storedUser = localStorage.getItem("user");
+      setUser(storedUser ? JSON.parse(storedUser) : null);
     }
+
+    loadUser();
+    window.addEventListener("user-login", loadUser);
+
+    return () => {
+      window.removeEventListener("user-login", loadUser);
+    };
   }, []);
 
-  // 🔹 LOGOUT
   function handleLogout() {
     localStorage.removeItem("user");
-    window.location.reload();
+    setUser(null);
+    window.dispatchEvent(new Event("user-logout"));
   }
 
   const firstLetter = user?.firstName?.charAt(0).toUpperCase();
 
   return (
     <div className="sticky top-0 z-999">
-      {/* ================= TOP SOCIAL BAR ================= */}
       <div className="bg-primary">
         <div className="py-2 max-w-[90%] m-auto flex justify-end">
           <div className="flex items-center gap-5">
@@ -49,14 +54,15 @@ const Header = () => {
         </div>
       </div>
 
-      {/* ================= MAIN HEADER ================= */}
       <div
         className="py-4 2xl:py-5 relative z-50 bg-cover bg-center"
         style={{ backgroundImage: `url(/images/headerbg.webp)` }}
       >
         <div className="max-w-[90%] m-auto flex items-center justify-between">
-          {/* LOGO */}
           <div>
+            <Link
+             href={'/'}
+             >
             <Image
               src={Logo}
               alt="Logo"
@@ -64,11 +70,10 @@ const Header = () => {
               height={500}
               className="max-w-[65px] md:max-w-[70px] lg:max-w-[90px] 2xl:max-w-[107px] absolute top-3 2xl:-top-8 z-1002"
             />
+             </Link>
           </div>
 
-          {/* MENU + USER */}
           <div className="flex items-center gap-3 md:gap-12">
-            {/* MENU */}
             <div className="flex items-center gap-6">
               {headerMenu.map((data, index) => (
                 <div className="py-4" key={index}>
@@ -81,29 +86,23 @@ const Header = () => {
               ))}
             </div>
 
-            {/* ================= USER SECTION ================= */}
             {!user ? (
               <Link href="/login">
                 <div className="flex items-center gap-4 cursor-pointer">
                   <div className="w-7 md:w-8 2xl:w-[50px] h-7 md:h-8 2xl:h-[50px] flex justify-center items-center rounded-full bg-white">
-                    <Image
-                      src={userIcon}
-                      alt="user"
-                      className="max-w-5"
-                    />
+                    <Image src={userIcon} alt="user" className="max-w-5" />
                   </div>
                   <span className="text-[19px] text-white">Login</span>
                 </div>
               </Link>
             ) : (
               <div
-                onClick={handleLogout}
                 className="flex items-center gap-4 cursor-pointer"
               >
                 <div className="w-7 md:w-8 2xl:w-[50px] h-7 md:h-8 2xl:h-[50px] rounded-full bg-white flex justify-center items-center text-primary font-bold text-xl">
                   {firstLetter}
                 </div>
-                <span className="text-[19px] text-white">Logout</span>
+                <span className="text-[19px] text-white underline" onClick={handleLogout}>Logout</span>
               </div>
             )}
           </div>

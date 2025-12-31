@@ -33,7 +33,7 @@ const Photogallery = () => {
             Photos
           </div>
         </Link>
-        <Link href="/photos">
+        <Link href="/videos">
           <div className="bg-white rounded-r-lg cursor-pointer text-black text-lg font-semibold text-center py-2">
             Videos
           </div>
