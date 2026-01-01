@@ -259,3 +259,97 @@ export const photosdata = [
   "/images/photos/photogallery3.webp",
   "/images/photos/photogallery4.webp",
 ];
+
+export const squadData = [
+  {
+    id: 1,
+    player_image: "/images/Shubman Gill.webp",
+    player_is: "Batter",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 2,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Batter",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 3,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Batter",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 4,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "All-Rounder",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 5,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "All-Rounder",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 6,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "All-Rounder",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 7,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "All-Rounder",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 8,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "All-Rounder",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 9,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Wicket Keeper",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 10,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Wicket Keeper",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 11,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Bowler",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 12,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Bowler",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 13,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Bowler",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 14,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Bowler",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+  {
+    id: 15,
+    player_image: "/images/Shubman Gill demo.webp",
+    player_is: "Bowler",
+    player_name: "SHUBMAN <br/> GILL",
+  },
+];
+
