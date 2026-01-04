@@ -21,7 +21,7 @@ const Footer = () => {
                 © Punjab Titans 2025 All rights reserved
               </p>
             </div>
-            <div className="flex justify-end items-center gap-18">
+            <div className="flex flex-col md:flex-row justify-end items-center gap-3 md:gap-18">
               <div className="flex gap-4">
                 <span className="text-sm md:text-base text-white">
                   Terms of Service
@@ -30,14 +30,14 @@ const Footer = () => {
                   Privacy Policy
                 </span>
               </div>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-3 md:gap-6">
                 <Link href={""}>
                   <Image
                     src={instagram}
                     alt="instagram"
                     width={1000}
                     height={500}
-                    className="max-w-[22px]"
+                    className="max-w-[18px] md:max-w-[22px]"
                   />
                 </Link>
                 <Link href={""}>
@@ -46,7 +46,7 @@ const Footer = () => {
                     alt="youtube"
                     width={1000}
                     height={500}
-                    className="max-w-[29px]"
+                    className="max-w-[24px] md:max-w-[29px]"
                   />
                 </Link>
                 <Link href={""}>
@@ -55,7 +55,7 @@ const Footer = () => {
                     alt="facebook"
                     width={1000}
                     height={500}
-                    className="max-w-3"
+                    className="max-w-[10px] md:max-w-3"
                   />
                 </Link>
               </div>

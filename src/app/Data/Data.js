@@ -191,47 +191,53 @@ export const headerMenu = [
     title: "Home",
     path: "/",
     hasDropdown: false,
+    icon : '/icons/homeicon.svg'
+
   },
   {
     id: 2,
     title: "Our Squad",
-    path: "/our-squad",
+    path: "/squad",
     hasDropdown: false,
+    icon : '/icons/squad.svg'
   },
   {
     id: 3,
     title: "Events",
     path: "/events",
     hasDropdown: false,
+    icon : '/icons/event.svg'
   },
-  {
-    id: 4,
-    title: "Leagues",
-    path: "/leagues",
-    hasDropdown: true,
-    dropdownItems: [
-      { title: "League 1", path: "/leagues/league-1" },
-      { title: "League 2", path: "/leagues/league-2" },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Leagues",
+  //   path: "/leagues",
+  //   hasDropdown: true,
+  //   dropdownItems: [
+  //     { title: "League 1", path: "/leagues/league-1" },
+  //     { title: "League 2", path: "/leagues/league-2" },
+  //   ],
+  // },
   {
     id: 5,
     title: "Gallery",
-    path: "/gallery",
+    path: "/",
     hasDropdown: true,
+    icon : '/icons/gallery.svg',
     dropdownItems: [
-      { title: "Photos", path: "/gallery/photos" },
-      { title: "Videos", path: "/gallery/videos" },
+      { title: "Photos", path: "/photos" },
+      { title: "Videos", path: "/videos" },
     ],
   },
   {
     id: 6,
     title: "Latest Updates",
     path: "/latest-updates",
+    icon : '/icons/updates.svg',
     hasDropdown: true,
     dropdownItems: [
-      { title: "News", path: "/latest-updates/news" },
-      { title: "Announcements", path: "/latest-updates/announcements" },
+      { title: "News", path: "/news" },
+      { title: "Feature", path: "/feature" },
     ],
   },
 ];

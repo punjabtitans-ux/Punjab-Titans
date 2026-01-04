@@ -108,8 +108,8 @@ const Login = () => {
   }
 
   return (
-    <div className="py-6 cus_container flex items-start gap-10">
-      <div className="flex items-center gap-2 w-[10%]">
+    <div className="py-6 cus_container flex flex-col lg:flex-row items-start  md:gap-10">
+      <div className="flex items-center gap-2 lg:w-[10%]">
         <Image
           src={"/icons/home.svg"}
           alt=""
@@ -120,8 +120,8 @@ const Login = () => {
         <span className="text-[#E0C36D] text-lg"> / Login</span>
       </div>
 
-      <div className="grid grid-cols-[2fr_3fr] w-[90%]">
-        <div className="relative z-999 top-[-20.5%]">
+      <div className="grid xl:grid-cols-[2fr_3fr] md:w-[90%]">
+        <div className="hidden xl:block relative z-999 top-[-20.5%]">
           <Image
             src={"/images/contactus_flag.webp"}
             alt=""
@@ -131,7 +131,7 @@ const Login = () => {
           />
         </div>
 
-        <div className="pt-32 ps-10">
+        <div className="pt-6 lg:pt-32 lg:ps-10">
           <div className="text-start">
             <h3 className="text-2xl font-semibold text-ternary">
               Welcome to The Punjab Titans

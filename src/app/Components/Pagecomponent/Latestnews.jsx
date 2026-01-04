@@ -26,7 +26,7 @@ const Latestnews = () => {
                 height={500}
                 className="max-h-[350px] object-fill md:max-h-[400px] xl:max-w-full"
               />
-              <div className="absolute flex flex-col justify-center w-full bottom-0 px-4 text-center items-center h-[30%] bg-[linear-gradient(0deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0)_100%)]">
+              <div className="absolute flex flex-col justify-center w-full bottom-0 px-2 2xl:px-4 text-center items-center h-[30%] bg-[linear-gradient(0deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0)_100%)]">
                 <h4 className="text-2xl 2xl:text-[27px] font-bold text-white">
                   {data.newstitle}
                 </h4>

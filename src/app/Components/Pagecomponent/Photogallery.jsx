@@ -27,20 +27,20 @@ const Photogallery = () => {
         />
         <span className="text-[#E0C36D] text-lg"> / Photos</span>
       </div>
-      <div className="mt-12 max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
+      <div className="mt-6 md:mt-12 max-w-[500px] 2xl:max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
         <Link href="/photos">
-          <div className="bg-primary rounded-l-lg cursor-pointer text-white text-lg font-semibold text-center py-2">
+          <div className="bg-primary rounded-l-lg cursor-pointer text-white text-base 2xl:text-lg md:font-semibold text-center py-1.5 2xl:py-2">
             Photos
           </div>
         </Link>
         <Link href="/videos">
-          <div className="bg-white rounded-r-lg cursor-pointer text-black text-lg font-semibold text-center py-2">
+          <div className="bg-white rounded-r-lg cursor-pointer text-black text-base 2xl:text-lg md:font-semibold text-center py-1.5 2xl:py-2">
             Videos
           </div>
         </Link>
       </div>
 
-      <div className="pt-12 grid grid-cols-4 gap-x-6 gap-y-6">
+      <div className="pt-6 md:pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 lg:gap-x-6 gap-y-6">
         {currentData.map((data, index) => (
           <div className="relative" key={index}>
             <Image

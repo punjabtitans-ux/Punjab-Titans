@@ -29,21 +29,21 @@ const VideoGallery = () => {
       </div>
 
       {/* TABS */}
-      <div className="mt-12 max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
+      <div className="mt-6 md:mt-12 max-w-[500px] 2xl:max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
         <Link href="/photos">
-          <div className="bg-white rounded-l-lg cursor-pointer text-black text-lg font-semibold text-center py-2">
+          <div className="bg-white rounded-l-lg cursor-pointer text-black text-base 2xl:text-lg md:font-semibold text-center py-2">
             Photos
           </div>
         </Link>
         <Link href="/videos">
-          <div className="bg-primary rounded-r-lg cursor-pointer text-white text-lg font-semibold text-center py-2">
+          <div className="bg-primary rounded-r-lg cursor-pointer text-white text-base 2xl:text-lg md:font-semibold text-center py-2">
             Videos
           </div>
         </Link>
       </div>
 
       {/* VIDEO GRID */}
-      <div className="pt-12 grid grid-cols-4 gap-x-6 gap-y-6">
+      <div className="pt-6 md:pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 lg:gap-x-6 gap-y-3 lg:gap-y-6">
         {currentData.map((data, index) => (
           <div className="relative" key={index}>
             <div className="relative">
@@ -61,17 +61,17 @@ const VideoGallery = () => {
                   alt="play"
                   width={1000}
                   height={500}
-                  className="max-w-20 cursor-pointer"
+                  className="max-w-12 md:max-w-16 lg:max-w-20 cursor-pointer"
                   onClick={() => setActiveVideo(data.video_url)}
                 />
               </div>
             </div>
 
-            <div className="py-6 px-4 bg-white rounded-b-lg relative -top-1">
-              <h3 className="text-base text-black line-clamp-2 font-semibold">
+            <div className="py-2 md:py-6 px-2 md:px-4 bg-white rounded-b-lg relative -top-1">
+              <h3 className="text-sm md:text-base text-black line-clamp-3 md:line-clamp-2 font-semibold">
                 {data.title}
               </h3>
-              <p className="text-sm pt-4">Video</p>
+              <p className="text-[12px] md:text-sm pt-2 md:pt-4">Video</p>
             </div>
           </div>
         ))}

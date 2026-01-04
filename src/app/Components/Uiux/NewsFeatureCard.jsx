@@ -12,12 +12,12 @@ const NewsFeatureCard = ({ id, poster, title, category }) => {
         </div>
       </div>
 
-      <div className="py-8 px-4 bg-white rounded-b-lg">
+      <div className="py-4 xl:py-8 px-4 bg-white rounded-b-lg">
         <h3 className="text-base text-black line-clamp-2 font-semibold">
           {title}
         </h3>
 
-        <p className="text-sm pt-4">{category}</p>
+        <p className="text-sm pt-2 md:pt-4">{category}</p>
       </div>
     </div>
   );

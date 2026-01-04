@@ -20,7 +20,7 @@ export const SquadCard = ({ player_image, player_name }) => {
 
         <div className=" absolute bottom-0 h-full w-full flex items-end bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0)_100%)]">
           <h4
-            className="text-3xl font-extrabold text-white pb-2 pl-4"
+            className="text-base md:text-xl lg:text-2xl 2xl:text-3xl font-extrabold text-white pb-2 pl-2 md:pl-4"
             dangerouslySetInnerHTML={{ __html: player_name }}
           />
         </div>
@@ -44,14 +44,14 @@ const Squad = () => {
       </div>
 
       {/* TABS */}
-      <div className="mt-12 max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
+      <div className="mt-12 max-w-[500px] 2xl:max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
         <Link href="/squad">
-          <div className="bg-primary rounded-l-lg cursor-pointer text-white text-lg font-semibold text-center py-2">
+          <div className="bg-primary rounded-l-lg cursor-pointer text-white text-base 2xl:text-lg font-semibold text-center py-1.5 2xl:py-2">
             PLAYERS
           </div>
         </Link>
         <Link href="/">
-          <div className="bg-white rounded-r-lg cursor-pointer text-black text-lg font-semibold text-center py-2">
+          <div className="bg-white rounded-r-lg cursor-pointer text-black text-base 2xl:text-lg font-semibold text-center py-1.5 2xl:py-2">
             SUPPORT STAFF
           </div>
         </Link>
@@ -62,12 +62,12 @@ const Squad = () => {
           <div className="relative">
             <p className="border-t-2 border-[#F0F0F0]"></p>
             <div className="absolute w-full flex justify-center -top-4.5">
-              <p className="w-fit py-1 px-5 bg-ternary text-xl font-semibold">
+              <p className="w-fit py-1 px-5 bg-ternary text-lg 2xl:text-xl font-semibold">
                 BATTERS
               </p>
             </div>
           </div>
-          <div className="pt-12 grid grid-cols-4 gap-y-10 gap-x-8">
+          <div className="pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-4 md:gap-x-6 lg:gap-x-8">
             {squadData.map((item) => {
               if (item.player_is !== "Batter") {
                 return null;
@@ -87,12 +87,12 @@ const Squad = () => {
           <div className="relative">
             <p className="border-t-2 border-[#F0F0F0]"></p>
             <div className="absolute w-full flex justify-center -top-4.5">
-              <p className="w-fit py-1 px-5 bg-ternary text-xl font-semibold">
+              <p className="w-fit py-1 px-5 bg-ternary text-lg 2xl:text-xl font-semibold">
                 ALL ROUNDERS
               </p>
             </div>
           </div>
-          <div className="pt-12 grid grid-cols-4 gap-y-10 gap-x-8">
+          <div className="pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-4 md:gap-x-6 lg:gap-x-8">
             {squadData.map((item) => {
               if (item.player_is !== "All-Rounder") {
                 return null;
@@ -112,12 +112,12 @@ const Squad = () => {
           <div className="relative">
             <p className="border-t-2 border-[#F0F0F0]"></p>
             <div className="absolute w-full flex justify-center -top-4.5">
-              <p className="w-fit py-1 px-5 bg-ternary text-xl font-semibold">
+              <p className="w-fit py-1 px-5 bg-ternary text-lg 2xl:text-xl font-semibold">
                 WICKET KEEPERS
               </p>
             </div>
           </div>
-          <div className="pt-12 grid grid-cols-4 gap-y-10 gap-x-8">
+          <div className="pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-4 md:gap-x-6 lg:gap-x-8">
             {squadData.map((item) => {
               if (item.player_is !== "Wicket Keeper") {
                 return null;
@@ -137,12 +137,12 @@ const Squad = () => {
           <div className="relative">
             <p className="border-t-2 border-[#F0F0F0]"></p>
             <div className="absolute w-full flex justify-center -top-4.5">
-              <p className="w-fit py-1 px-5 bg-ternary text-xl font-semibold">
+              <p className="w-fit py-1 px-5 bg-ternary text-lg 2xl:text-xl font-semibold">
                 BOWLERS
               </p>
             </div>
           </div>
-          <div className="pt-12 grid grid-cols-4 gap-y-10 gap-x-8">
+          <div className="pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 gap-x-4 md:gap-x-6 lg:gap-x-8">
             {squadData.map((item) => {
               if (item.player_is !== "Bowler") {
                 return null;

@@ -10,7 +10,7 @@ const Overallstats = () => {
   });
 
   return (
-    <div ref={ref} className="cus_container py-6 md:py-16">
+    <div ref={ref} className="cus_container py-6 md:py-12 2xl:py-16">
       <div className="max-w-6xl m-auto flex flex-wrap justify-center md:grid md:grid-cols-3 gap-3">
         
         <div className="text-center w-[45%] md:w-full">

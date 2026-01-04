@@ -28,7 +28,7 @@ const Events = () => {
         <span className="text-[#E0C36D] text-lg"> / Events</span>
       </div>
       {/* VIDEO GRID */}
-      <div className="pt-12 grid grid-cols-4 gap-x-6 gap-y-6">
+      <div className="pt-6 md:pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-6 gap-y-3 md:gap-y-6">
         {currentData.map((data, index) => (
           <div className="relative" key={index}>
             <div className="relative">
@@ -46,17 +46,17 @@ const Events = () => {
                   alt="play"
                   width={1000}
                   height={500}
-                  className="max-w-20 cursor-pointer"
+                  className="max-w-12 md:max-w-16 lg:max-w-20 cursor-pointer"
                   // onClick={() => setActiveVideo(data.video_url)}
                 />
               </div>
             </div>
 
-            <div className="py-6 px-4 bg-white rounded-b-lg relative -top-1">
-              <h3 className="text-base text-black line-clamp-2 font-semibold">
+            <div className="py-2 md:py-6 px-2 md:px-4 bg-white rounded-b-lg relative -top-1">
+              <h3 className="text-sm md:text-base text-black line-clamp-3 md:line-clamp-2 font-semibold">
                 {data.title}
               </h3>
-              <p className="text-sm pt-4">Video</p>
+              <p className="text-sm pt-2 md:pt-4">Video</p>
             </div>
           </div>
         ))}

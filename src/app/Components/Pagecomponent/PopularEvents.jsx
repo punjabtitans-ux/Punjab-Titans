@@ -61,7 +61,7 @@ const PopularEvents = () => {
                   </div>
                   <div className="flex items-center">
                     <div className="">
-                      <span className="bg-[#2F2E2E] px-6 2xl:px-8 py-1.5 2xl:py-2.5 text-white text-[12px] lg:text-sm xl:text-xl rounded-full font-light">
+                      <span className="bg-[#2F2E2E] px-6 2xl:px-8 py-1.5 2xl:py-2.5 text-white text-[12px] lg:text-sm xl:text-lg 2xl:text-xl rounded-full font-light">
                         {data.event_date}
                       </span>
                       <h2 className="text-2xl lg:text-[30px] xl:text-[42px] 2xl:text-[50px] text-white font-black mt-2 lg:mt-1 mb-1 xl:mt-4 xl:mb-2">

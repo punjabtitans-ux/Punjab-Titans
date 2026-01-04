@@ -77,9 +77,9 @@ const Squadslider = () => {
                       alt={data.player_name}
                       width={1000}
                       height={500}
-                      className="max-w-[177px] 2xl:max-w-[197px] m-auto"
+                      className="max-w-[167px] 2xl:max-w-[197px] m-auto"
                     />
-                    <p className="text-xl 2xl:text-[22px] text-white text-center pt-4">
+                    <p className="text-lg 2xl:text-[22px] text-white text-center pt-4">
                       {data.player_name}
                     </p>
                   </div>

@@ -43,7 +43,7 @@ export const videodata = [
   },
   {
     id: 8,
-    video_thembnel: "/images/videothembnel1.webp",
+    video_thembnel: "/images/videothembnel10.webp",
     video_url: "/videos/video1.mp4",
     title: "Pre-Auction Conversation ft. Ashish Nehra and Parthiv Patel",
   },
