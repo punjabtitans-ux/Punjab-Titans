@@ -44,6 +44,7 @@ const NewsPost = () => {
           </div>
         </Link>
       </div>
+      
 
       <div className="pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 lg:gap-x-6 gap-y-6">
         {currentData.map((data) => (
