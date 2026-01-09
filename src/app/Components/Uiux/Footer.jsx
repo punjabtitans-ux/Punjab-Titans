@@ -23,15 +23,19 @@ const Footer = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-end items-center gap-3 md:gap-18">
               <div className="flex gap-4">
-                <span className="text-sm md:text-base text-white">
-                  Terms of Service
-                </span>
-                <span className="text-sm md:text-base text-white">
-                  Privacy Policy
-                </span>
+                <Link href={"/terms-and-conditions"}>
+                  <span className="text-sm md:text-base text-white">
+                    Terms of Service
+                  </span>
+                </Link>
+                <Link href={"/privacy-policy"}>
+                  <span className="text-sm md:text-base text-white">
+                    Privacy Policy
+                  </span>
+                </Link>
               </div>
               <div className="flex items-center gap-3 md:gap-6">
-                <Link href={""}>
+                <Link target="_blank" href={"https://www.instagram.com/punjabtitansofficial/"}>
                   <Image
                     src={instagram}
                     alt="instagram"
@@ -40,7 +44,7 @@ const Footer = () => {
                     className="max-w-[18px] md:max-w-[22px]"
                   />
                 </Link>
-                <Link href={""}>
+                <Link target="_blank" href={"https://www.youtube.com/channel/UCrdoKCkBQTYfGQVOhFbNAwA"}>
                   <Image
                     src={youtube}
                     alt="youtube"
@@ -49,7 +53,7 @@ const Footer = () => {
                     className="max-w-[24px] md:max-w-[29px]"
                   />
                 </Link>
-                <Link href={""}>
+                <Link target="_blank" href={"https://www.facebook.com/profile.php?id=61583443735600"}>
                   <Image
                     src={facebook}
                     alt="facebook"

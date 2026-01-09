@@ -81,29 +81,35 @@ const Header = () => {
     <div className="sticky top-0 z-999">
       <div className="bg-primary">
         <div className="py-2 max-w-[90%] m-auto flex justify-end">
-          <div className="flex items-center gap-5">
-            <Link href="#">
-              <Image
-                src={instagram}
-                alt="instagram"
-                className="max-w-[18px] 2xl:max-w-[22px]"
-              />
-            </Link>
-            <Link href="#">
-              <Image
-                src={youtube}
-                alt="youtube"
-                className="max-w-[18px] 2xl:max-w-[29px]"
-              />
-            </Link>
-            <Link href="#">
-              <Image
-                src={facebook}
-                alt="facebook"
-                className="max-w-[18px] 2xl:max-w-[18px]"
-              />
-            </Link>
-          </div>
+         <div className="flex items-center gap-3 md:gap-6">
+                <Link target="_blank" href={"https://www.instagram.com/punjabtitansofficial/"}>
+                  <Image
+                    src={instagram}
+                    alt="instagram"
+                    width={1000}
+                    height={500}
+                    className="max-w-[18px] md:max-w-[22px]"
+                  />
+                </Link>
+                <Link target="_blank" href={"https://www.youtube.com/channel/UCrdoKCkBQTYfGQVOhFbNAwA"}>
+                  <Image
+                    src={youtube}
+                    alt="youtube"
+                    width={1000}
+                    height={500}
+                    className="max-w-[24px] md:max-w-[29px]"
+                  />
+                </Link>
+                <Link target="_blank" href={"https://www.facebook.com/profile.php?id=61583443735600"}>
+                  <Image
+                    src={facebook}
+                    alt="facebook"
+                    width={1000}
+                    height={500}
+                    className="max-w-[10px] md:max-w-3"
+                  />
+                </Link>
+              </div>
         </div>
       </div>
       <div
