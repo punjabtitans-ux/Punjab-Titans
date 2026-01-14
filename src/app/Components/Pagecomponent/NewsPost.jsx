@@ -32,6 +32,7 @@ const NewsPost = () => {
         <span className="text-[#E0C36D] text-lg"> / News</span>
       </div>
 
+
       <div className="mt-12 max-w-[500px] 2xl:max-w-2xl grid grid-cols-2 rounded-lg border-2 border-white">
         <Link href="/news">
           <div className="bg-primary rounded-l-lg cursor-pointer text-white text-base 2xl:text-lg md:font-semibold text-center py-1.5 2xl:py-2">
