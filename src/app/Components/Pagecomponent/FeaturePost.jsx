@@ -49,6 +49,8 @@ const FeaturePost = () => {
           poster={data.poster}
           title={data.title}
           category={data.category}
+          startingslug={'feature'}
+          slug={data.page_link || ''}
          />
         ))}
       </div>

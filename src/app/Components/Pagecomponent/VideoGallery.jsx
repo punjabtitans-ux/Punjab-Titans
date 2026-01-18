@@ -45,35 +45,36 @@ const VideoGallery = () => {
       {/* VIDEO GRID */}
       <div className="pt-6 md:pt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 lg:gap-x-6 gap-y-3 lg:gap-y-6">
         {currentData.map((data, index) => (
-          <div className="relative" key={index}>
+          <Link href={`/videos/${data.page_slug || ''} `} key={index}>
             <div className="relative">
-              <Image
-                src={data.video_thembnel}
-                alt="video thumbnail"
-                width={1000}
-                height={500}
-                className="rounded-lg"
-              />
-
-              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+              <div className="relative">
                 <Image
-                  src={"/images/playbtn.webp"}
-                  alt="play"
+                  src={data.video_thembnel}
+                  alt="video thumbnail"
                   width={1000}
                   height={500}
-                  className="max-w-12 md:max-w-16 lg:max-w-20 cursor-pointer"
-                  onClick={() => setActiveVideo(data.video_url)}
+                  className="rounded-lg"
                 />
+
+                <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                  <Image
+                    src={"/images/playbtn.webp"}
+                    alt="play"
+                    width={1000}
+                    height={500}
+                    className="max-w-12 md:max-w-16 lg:max-w-20 cursor-pointer"
+                  />
+                </div>
+              </div>
+
+              <div className="py-2 md:py-6 px-2 md:px-4 bg-white rounded-b-lg relative -top-1">
+                <h3 className="text-sm md:text-base text-black line-clamp-3 md:line-clamp-2 font-semibold">
+                  {data.title}
+                </h3>
+                <p className="text-[12px] md:text-sm pt-2 md:pt-4">Video</p>
               </div>
             </div>
-
-            <div className="py-2 md:py-6 px-2 md:px-4 bg-white rounded-b-lg relative -top-1">
-              <h3 className="text-sm md:text-base text-black line-clamp-3 md:line-clamp-2 font-semibold">
-                {data.title}
-              </h3>
-              <p className="text-[12px] md:text-sm pt-2 md:pt-4">Video</p>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
 
@@ -102,9 +103,7 @@ const VideoGallery = () => {
                 key={page}
                 onClick={() => setCurrentPage(page)}
                 className={`px-4 py-2 border rounded-md ${
-                  currentPage === page
-                    ? "bg-white text-black"
-                    : "text-white"
+                  currentPage === page ? "bg-white text-black" : "text-white"
                 }`}
               >
                 {page}
@@ -114,9 +113,7 @@ const VideoGallery = () => {
         </div>
 
         <button
-          onClick={() =>
-            setCurrentPage((p) => Math.min(p + 1, totalPages))
-          }
+          onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
           disabled={currentPage === totalPages}
           className="px-4 py-2 border rounded-md disabled:opacity-40 flex gap-3 items-center text-ternary"
         >
@@ -132,7 +129,7 @@ const VideoGallery = () => {
       </div>
 
       {/* VIDEO MODAL */}
-      {activeVideo && (
+      {/* {activeVideo && (
         <div className="fixed inset-0 bg-black/80 z-[9999] flex justify-center items-center">
           <div className="relative w-[70%] max-w-4xl">
             <button
@@ -150,7 +147,7 @@ const VideoGallery = () => {
             />
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
