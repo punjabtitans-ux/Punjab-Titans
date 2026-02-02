@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { videodata } from "@/app/Data/Videos";
+import { videodata } from "../../Data/Videos";
 
 const ITEMS_PER_PAGE = 12;
 

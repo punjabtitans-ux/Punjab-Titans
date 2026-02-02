@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { videodata } from "@/app/Data/Videos";
+import { videodata } from "../../Data/Videos";
 import Image from "next/image";
 import NewsFeatureCard from "@/app/Components/Uiux/NewsFeatureCard";
 import { newsdata } from "@/app/Data/NewsData";
