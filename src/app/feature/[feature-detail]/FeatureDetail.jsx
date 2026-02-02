@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { usePathname } from "next/navigation";
-import NewsFeatureCard from "@/app/Components/Uiux/NewsFeatureCard";
+import NewsFeatureCard from "../../Components/Uiux/NewsFeatureCard";
 import { newsdata } from "../../Data/NewsData";
 import { featuredata } from "../../Data/FeatureData";
 const FeatureDetail = () => {
