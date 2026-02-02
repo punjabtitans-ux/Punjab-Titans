@@ -28,22 +28,22 @@ const Squadslider = () => {
               />
             </div>
            <div className="flex justify-between py-2">
-             <div className="xl:absolute left-[5%] bottom-[10%]">
+             <div className="absolute left-[5%] bottom-[-75%] md:bottom-[10%]">
               <Image
                 src={arrowleft}
                 alt="left"
                 width={1000}
                 height={500}
-                className="w-[50px] custom-prev cursor-pointer"
+                className="w-[30px] md:w-[50px] custom-prev cursor-pointer"
               />
             </div>
-            <div className="xl:absolute  right-[5%] bottom-[10%]">
+            <div className="absolute  right-[5%] bottom-[-75%] md:bottom-[10%]">
               <Image
                 src={arrowlright}
                 alt="left"
                 width={1000}
                 height={500}
-                className="w-[50px] custom-next cursor-pointer"
+                className="w-[30px] md:w-[50px] custom-next cursor-pointer"
               />
             </div>
            </div>

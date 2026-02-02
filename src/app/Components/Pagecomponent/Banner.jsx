@@ -6,8 +6,8 @@ import Description from "../Uiux/Description";
 import Bannermarque from "./Bannermarque";
 const Banner = () => {
   return (
-    <div className="relative">
-      <div
+    <div className="relative md:top-[-60px]">
+      {/* <div
         className="bg-cover bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${bannerbg.src})` }}
       >
@@ -38,7 +38,16 @@ const Banner = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+       <div>
+        <Image
+         src={'/videos/bannermain.gif'}
+         alt=""
+         width={1000}
+         height={500}
+         className="w-full h-[50vh] object-cover md:h-auto"
+         />
+       </div>
       <div className="absolute overflow-hidden w-full -bottom-1 md:-bottom-4 lg:bottom-1">
         <Bannermarque />
       </div>

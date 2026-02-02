@@ -1,9 +1,9 @@
 import React from "react";
 import Title from "../Uiux/Title";
 import Button from "../Uiux/Button";
-import { PopularEventsdata } from "@/app/Data/Data";
 import Image from "next/image";
 import Description from "../Uiux/Description";
+import { PopularEventsdata } from "../../Data/Data";
 const PopularEvents = () => {
   return (
     <div>

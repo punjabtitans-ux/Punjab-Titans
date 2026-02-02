@@ -81,31 +81,32 @@ export const Squaddata = [
 ];
 
 // Letest news and updates data
-import rcbvsmi from "../../../public/images/rcbvsmi.webp";
-import pbksvssrh from "../../../public/images/pbksvssrh.webp";
-import gtvscsk from "../../../public/images/gtvscsk.webp";
+import update1 from "../../../public/images/update1.webp";
+import update2 from "../../../public/images/update2.webp";
+import update3 from "../../../public/images/update3.webp";
+import update4 from "../../../public/images/update4.webp";
 export const newsupdatedata = [
   {
     id: 1,
-    newsposter: rcbvsmi,
+    newsposter: update1,
     newstitle: "RCB vs MI (Yesterday)",
     news_description: `Mumbai Indians' road to redemption begins against Royal Challengers Bangalore`,
   },
   {
     id: 2,
-    newsposter: pbksvssrh,
+    newsposter: update2,
     newstitle: "SRH vs PBKS (Yesterday)",
     news_description: `Sunrisers Hyderabad thrash Punjab Kings by 8 wickets to score 1st win in IPL 2023 `,
   },
   {
     id: 3,
-    newsposter: rcbvsmi,
+    newsposter: update3,
     newstitle: "RCB vs MI (Yesterday)",
     news_description: `Mumbai Indians' road to redemption begins against Royal Challengers Bangalore`,
   },
   {
     id: 4,
-    newsposter: gtvscsk,
+    newsposter: update4,
     newstitle: "CSK vs GT (Yesterday)",
     news_description: `When and where to watch Gujarat Titans vs Chennai Super Kings?`,
   },
@@ -191,22 +192,21 @@ export const headerMenu = [
     title: "Home",
     path: "/",
     hasDropdown: false,
-    icon : '/icons/homeicon.svg'
-
+    icon: "/icons/homeicon.svg",
   },
   {
     id: 2,
-    title: "Our Squad",
-    path: "/squad",
+    title: "About Us",
+    path: "/about-us",
     hasDropdown: false,
-    icon : '/icons/squad.svg'
+    icon: "/icons/squad.svg",
   },
   {
     id: 3,
     title: "Events",
     path: "/events",
     hasDropdown: false,
-    icon : '/icons/event.svg'
+    icon: "/icons/event.svg",
   },
   // {
   //   id: 4,
@@ -223,7 +223,7 @@ export const headerMenu = [
     title: "Gallery",
     path: "/",
     hasDropdown: true,
-    icon : '/icons/gallery.svg',
+    icon: "/icons/gallery.svg",
     dropdownItems: [
       { title: "Photos", path: "/photos" },
       { title: "Videos", path: "/videos" },
@@ -233,11 +233,12 @@ export const headerMenu = [
     id: 6,
     title: "Latest Updates",
     path: "/latest-updates",
-    icon : '/icons/updates.svg',
+    icon: "/icons/updates.svg",
     hasDropdown: true,
     dropdownItems: [
       { title: "News", path: "/news" },
       { title: "Feature", path: "/feature" },
+      { title: "Our Squad", path: "/squad" },
     ],
   },
 ];
@@ -358,4 +359,3 @@ export const squadData = [
     player_name: "SHUBMAN <br/> GILL",
   },
 ];
-

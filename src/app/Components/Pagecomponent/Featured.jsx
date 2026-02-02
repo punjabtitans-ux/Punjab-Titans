@@ -15,10 +15,10 @@ const Featured = () => {
           <Title title={"Featured In"} color={"text-white"} />
         </div>
 
-        <div className="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-6 pt-6 md:pt-12 gap-2 md:gap-4">
+        <div className="max-w-7xl m-auto grid grid-cols-3 md:grid-cols-6 pt-6 md:pt-12 gap-0 md:gap-4">
           {[
-            featured1,
             featured2,
+            featured1,
             featured3,
             featured4,
             featured5,

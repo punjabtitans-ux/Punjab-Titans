@@ -12,7 +12,7 @@ import Image from "next/image";
 import arrowleft from "../../../../public/icons/Button - Previous slide.svg";
 import arrowlright from "../../../../public/icons/Button - Next slide.svg";
 import Featured from "./Featured";
-const SpotLight = () => {
+const SpotLight = ({feature}) => {
   return (
     <div className="bg-primary">
       <div className="bg-[linear-gradient(0deg,rgba(0,0,0,0.57)_0%,rgba(0,0,0,1)_83%)]">
@@ -98,7 +98,12 @@ const SpotLight = () => {
               ))}
             </Swiper>
           </div>
-          <Featured />
+          {
+            feature === false ?
+            null :
+            <Featured />
+          }
+          
         </div>
       </div>
     </div>

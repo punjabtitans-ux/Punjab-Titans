@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { squadData } from "@/app/Data/Data";
+import { squadData } from "../../Data/Data.js";
 
 export const SquadCard = ({ player_image, player_name }) => {
   return (

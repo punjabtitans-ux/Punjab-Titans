@@ -4,7 +4,7 @@ const Title = ({ title, color, border }) => {
   return (
     <div className="flex flex-col items-center">
       <h2
-        className={`uppercase  text-[38px] md:text-[48px] xl:text-[58px] 2xl:text-[70px] laeding-[38px]  md:leading-[49px] xl:leading-[58px] 2xl:leading-[70px] ${color} font-black ${
+        className={`uppercase  text-[34px] md:text-[48px] xl:text-[58px] 2xl:text-[70px] ledading-[40px]  md:leading-[49px] xl:leading-[58px] 2xl:leading-[70px] ${color} font-black ${
           border ? "pb-8" : ""
         }`}
         dangerouslySetInnerHTML={{ __html: title }}

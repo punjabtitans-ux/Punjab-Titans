@@ -9,7 +9,7 @@ import youtube from "../../../../public/icons/youtube-white.svg";
 import facebook from "../../../../public/icons/facebook-white.svg";
 import userIcon from "../../../../public/icons/user.svg";
 
-import { headerMenu } from "@/app/Data/Data";
+import { headerMenu } from "../../Data/Data";
 
 const Header = () => {
   const [user, setUser] = useState(null);
@@ -266,7 +266,7 @@ const Header = () => {
             <nav
               className={`block md:hidden  space-y-2 absolute transition-all duration-300 ${
                 open ? "py-5 h-[90vh]" : "overflow-hidden h-0"
-              } top-16 right-0 w-[90%]  bg-white`}
+              } top-16 right-0 w-[100%]  bg-white`}
             >
               {headerMenu.map((item) => (
                 <div key={item.id}>
