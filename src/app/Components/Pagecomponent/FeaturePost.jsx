@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import { featuredata } from "@/app/Data/FeatureData";
+import { featuredata } from "../../Data/FeatureData";
 import NewsFeatureCard from "../Uiux/NewsFeatureCard";
 import Link from "next/link";
 

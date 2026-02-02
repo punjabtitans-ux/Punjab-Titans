@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { videodata } from "../../Data/Videos";
 import Image from "next/image";
 import NewsFeatureCard from "@/app/Components/Uiux/NewsFeatureCard";
-import { newsdata } from "@/app/Data/NewsData";
+import { newsdata } from "../../Data/NewsData";
 import Link from "next/link";
 const VideoDetail = () => {
   const currentpath = usePathname().split("/").pop();

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { newsdata } from "@/app/Data/NewsData";
+import { newsdata } from "../../Data/NewsData";
 import NewsFeatureCard from "../Uiux/NewsFeatureCard";
 import Link from "next/link";
 

@@ -3,8 +3,8 @@ import Image from "next/image";
 import React from "react";
 import { usePathname } from "next/navigation";
 import NewsFeatureCard from "@/app/Components/Uiux/NewsFeatureCard";
-import { newsdata } from "@/app/Data/NewsData";
-import { featuredata } from "@/app/Data/FeatureData";
+import { newsdata } from "../../Data/NewsData";
+import { featuredata } from "../../Data/FeatureData";
 const FeatureDetail = () => {
   const currentpath = usePathname().split("/").pop();
   console.log(currentpath);
