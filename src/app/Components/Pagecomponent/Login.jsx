@@ -108,7 +108,7 @@ const Login = () => {
   }
 
   return (
-    <div className="py-6 cus_container flex flex-col lg:flex-row items-start  md:gap-10">
+    <div className="pt-6 md:pb-6 cus_container flex flex-col lg:flex-row items-start  md:gap-10">
       <div className="flex items-center gap-2 lg:w-[10%]">
         <Image
           src={"/icons/home.svg"}
