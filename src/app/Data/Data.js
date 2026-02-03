@@ -162,7 +162,7 @@ export const spotlightdata = [
   {
     id: 1,
     spolight_poster: Spotlight1,
-    spolight_title: "TITANS STORM THE ARENA",
+    spolight_title: "TITANS STORM THE ",
     spotlight_description: `Singh slams 62 in a commanding victory From the first over, Punjab Titans owned the field. Harjit “Hammer” Singh led the charge with ruthless hitting as the opponents fell short in a dominating win.`,
   },
   {
@@ -175,7 +175,7 @@ export const spotlightdata = [
   {
     id: 3,
     spolight_poster: Spotlight1,
-    spolight_title: "TITANS STORM THE ARENA",
+    spolight_title: "TITANS STORM THE ",
     spotlight_description: `Singh slams 62 in a commanding victory From the first over, Punjab Titans owned the field. Harjit “Hammer” Singh led the charge with ruthless hitting as the opponents fell short in a dominating win.`,
   },
   {
@@ -196,10 +196,13 @@ export const headerMenu = [
   },
   {
     id: 2,
-    title: "About Us",
-    path: "/about-us",
-    hasDropdown: false,
-    icon: "/icons/squad.svg",
+    title: "League",
+    path: "/league-legends-90s",
+    hasDropdown: true,
+       dropdownItems: [
+      { title: "Legend's 90", path: "/league-legends-90s" },
+    ],
+    icon: "/icons/league.svg",
   },
   {
     id: 3,
@@ -208,16 +211,13 @@ export const headerMenu = [
     hasDropdown: false,
     icon: "/icons/event.svg",
   },
-  // {
-  //   id: 4,
-  //   title: "Leagues",
-  //   path: "/leagues",
-  //   hasDropdown: true,
-  //   dropdownItems: [
-  //     { title: "League 1", path: "/leagues/league-1" },
-  //     { title: "League 2", path: "/leagues/league-2" },
-  //   ],
-  // },
+  {
+    id: 4,
+    title: "Our Squad",
+    path: "/squad",
+    hasDropdown: false,
+    icon: "/icons/squad.svg",
+  },
   {
     id: 5,
     title: "Gallery",
@@ -237,8 +237,7 @@ export const headerMenu = [
     hasDropdown: true,
     dropdownItems: [
       { title: "News", path: "/news" },
-      { title: "Feature", path: "/feature" },
-      { title: "Our Squad", path: "/squad" },
+      { title: "Feature", path: "/feature" }
     ],
   },
 ];

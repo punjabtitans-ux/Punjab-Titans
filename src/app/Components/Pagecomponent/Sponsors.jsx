@@ -30,7 +30,7 @@ const Sponsors = () => {
                 alt="Featured"
                 width={2000}
                 height={500}
-                className=""
+                className="h-full"
               />
             </div>
           ))}

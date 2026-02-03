@@ -45,9 +45,10 @@ const Legacy = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="pb-18 lg:pb-24 2xl:pb-32">
-        <Sponsors />
+
+        <div className="pb-18 lg:pb-24 2xl:pb-32 pt-8">
+          <Sponsors />
+        </div>
       </div>
     </div>
   );

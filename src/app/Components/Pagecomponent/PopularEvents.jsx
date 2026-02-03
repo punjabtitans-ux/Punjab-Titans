@@ -28,11 +28,11 @@ const PopularEvents = () => {
                     className=""
                   />
                   <div className="mt-8">
-                    <span className="bg-[#2F2E2E] px-6 2xl:px-8 py-1.5 2xl:py-2.5 text-white text-base lg:text-xl rounded-full font-light">
+                    <span className="bg-[#2F2E2E] px-4 md:px-6 2xl:px-8 py-1 md:py-1.5 2xl:py-2.5 text-white text-sm md:text-base lg:text-xl rounded-full font-light">
                       {data.event_date}
                     </span>
                   </div>
-                  <h2 className="text-[34px] lg:text-[45px] xl:text-[52px] 2xl:text-[60px] text-white leading-[45px] lg:leading-[55px] xl:leading-[63px] 2xl:leading-[65px] font-black my-4 xl:my-8">
+                  <h2 className="text-[25px] md:text-[34px] lg:text-[45px] xl:text-[52px] 2xl:text-[60px] text-white leading-[35px] md:leading-[45px] lg:leading-[55px] xl:leading-[63px] 2xl:leading-[65px] font-black my-4 xl:my-8">
                     {data.event_title}
                   </h2>
                   <Description
@@ -61,7 +61,7 @@ const PopularEvents = () => {
                   </div>
                   <div className="flex items-center">
                     <div className="">
-                      <span className="bg-[#2F2E2E] px-6 2xl:px-8 py-1.5 2xl:py-2.5 text-white text-[12px] lg:text-sm xl:text-lg 2xl:text-xl rounded-full font-light">
+                      <span className="bg-[#2F2E2E] px-4 md:px-6 2xl:px-8 py-1 md:py-1.5 2xl:py-2.5 text-white text-[12px] lg:text-sm xl:text-lg 2xl:text-xl rounded-full font-light">
                         {data.event_date}
                       </span>
                       <h2 className="text-2xl lg:text-[30px] xl:text-[42px] 2xl:text-[50px] text-white font-black mt-2 lg:mt-1 mb-1 xl:mt-4 xl:mb-2">

@@ -16,6 +16,8 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [open, setOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [showLogoutPopup, setShowLogoutPopup] = useState(false);
+
   useEffect(() => {
     function loadUser() {
       const storedUser = localStorage.getItem("user");
@@ -78,38 +80,47 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-999">
+    <div className="sticky top-[-2px] z-999">
       <div className="bg-primary">
         <div className="py-2 max-w-[90%] m-auto flex justify-end">
-         <div className="flex items-center gap-3 md:gap-6">
-                <Link target="_blank" href={"https://www.instagram.com/punjabtitansofficial/"}>
-                  <Image
-                    src={instagram}
-                    alt="instagram"
-                    width={1000}
-                    height={500}
-                    className="max-w-[18px] md:max-w-[22px]"
-                  />
-                </Link>
-                <Link target="_blank" href={"https://www.youtube.com/channel/UCrdoKCkBQTYfGQVOhFbNAwA"}>
-                  <Image
-                    src={youtube}
-                    alt="youtube"
-                    width={1000}
-                    height={500}
-                    className="max-w-[24px] md:max-w-[29px]"
-                  />
-                </Link>
-                <Link target="_blank" href={"https://www.facebook.com/profile.php?id=61583443735600"}>
-                  <Image
-                    src={facebook}
-                    alt="facebook"
-                    width={1000}
-                    height={500}
-                    className="max-w-[10px] md:max-w-3"
-                  />
-                </Link>
-              </div>
+          <div className="flex items-center gap-3 md:gap-6">
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/punjabtitansofficial/"}
+            >
+              <Image
+                src={instagram}
+                alt="instagram"
+                width={1000}
+                height={500}
+                className="max-w-[18px] md:max-w-[22px]"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              href={"https://www.youtube.com/channel/UCrdoKCkBQTYfGQVOhFbNAwA"}
+            >
+              <Image
+                src={youtube}
+                alt="youtube"
+                width={1000}
+                height={500}
+                className="max-w-[24px] md:max-w-[29px]"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              href={"https://www.facebook.com/profile.php?id=61583443735600"}
+            >
+              <Image
+                src={facebook}
+                alt="facebook"
+                width={1000}
+                height={500}
+                className="max-w-[10px] md:max-w-3"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div
@@ -124,7 +135,7 @@ const Header = () => {
                 alt="Logo"
                 width={1000}
                 height={500}
-                className="max-w-[65px] md:max-w-[70px] lg:max-w-[81px]  xl:max-w-[85px] 2xl:max-w-[107px] absolute -top-5 2xl:-top-8 z-1002"
+                className="max-w-[65px] md:max-w-[70px] lg:max-w-[81px]  xl:max-w-[85px] 2xl:max-w-[107px] absolute -top-8 md:-top-5 2xl:-top-8 z-1002"
               />
             </Link>
           </div>
@@ -204,7 +215,7 @@ const Header = () => {
             {!user ? (
               <Link href="/login">
                 <div className="flex items-center gap-2 2xl:gap-4 cursor-pointer">
-                  <div className="w-10 md:w-8 2xl:w-[50px] h-10 md:h-8 2xl:h-[50px] flex justify-center items-center rounded-full bg-white">
+                  <div className="w-8 md:w-8 2xl:w-[50px] h-8 md:h-8 2xl:h-[50px] flex justify-center items-center rounded-full bg-white">
                     <Image src={userIcon} alt="user" className="max-w-5" />
                   </div>
                   <span className="hidden md:block text-base 2xl:text-[19px] text-white">
@@ -215,9 +226,9 @@ const Header = () => {
             ) : (
               <div
                 className="flex items-center gap-2 2xl:gap-4 cursor-pointer"
-                onClick={handleLogout}
+                onClick={() => setShowLogoutPopup(true)}
               >
-                <div className="w-10 md:w-8 2xl:w-[50px] h-10 md:h-8 2xl:h-[50px] rounded-full bg-white flex justify-center items-center text-primary font-bold text-xl">
+                <div className="w-8 md:w-8 2xl:w-[50px] h-8 md:h-8 2xl:h-[50px] rounded-full bg-white flex justify-center items-center text-primary font-bold text-base md:text-xl">
                   {firstLetter}
                 </div>
                 <span className="hidden md:block text-base 2xl:text-[19px] text-white underline">
@@ -233,8 +244,7 @@ const Header = () => {
               {!open ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
+                   className="w-[30px] md:w-[38px]"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -249,8 +259,7 @@ const Header = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="38"
-                  height="38"
+                   className="w-[30px] md:w-[38px]"
                   viewBox="0 0 15 15"
                 >
                   <path
@@ -266,7 +275,7 @@ const Header = () => {
             <nav
               className={`block md:hidden  space-y-2 absolute transition-all duration-300 ${
                 open ? "py-5 h-[90vh]" : "overflow-hidden h-0"
-              } top-16 right-0 w-[100%]  bg-white`}
+              } top-13 right-0 w-[100%]  bg-white`}
             >
               {headerMenu.map((item) => (
                 <div key={item.id}>
@@ -274,7 +283,7 @@ const Header = () => {
                     <Link
                       href={`${item.path}`}
                       onClick={() => setOpen(false)}
-                      className="flex items-center  px-4 gap-3 px-3 py-2 rounded-lg text-[15px] font-medium text-black hover:bg-black/5  transition-all duration-500 "
+                      className="flex items-center justify-start  px-4 gap-3 px-3 py-2 rounded-lg text-[15px] font-medium text-black hover:bg-black/5  transition-all duration-500 "
                     >
                       <Image
                         src={item.icon}
@@ -283,7 +292,7 @@ const Header = () => {
                         height={500}
                         className="max-w-5"
                       />
-                      {item.title}
+                      <span className="">{item.title}</span> <span className="w-4"></span>
                     </Link>
                   ) : (
                     <>
@@ -291,10 +300,10 @@ const Header = () => {
                       <div
                         onClick={() =>
                           setOpenDropdown(
-                            openDropdown === item.id ? null : item.id
+                            openDropdown === item.id ? null : item.id,
                           )
                         }
-                        className={`flex w-full items-center justify-between px-3 py-2 rounded-lg text-[15px] font-medium  transition-all duration-500  ${
+                        className={`flex w-full items-center justify-between px-4 py-2 rounded-lg text-[15px] font-medium  transition-all duration-500  ${
                           openDropdown === item.id
                             ? "bg-primary text-white"
                             : "text-black hover:bg-black/5"
@@ -306,7 +315,7 @@ const Header = () => {
                             alt=""
                             width={1000}
                             height={500}
-                            className={`max-w-5`}
+                            className={`max-w-5 ${openDropdown === item.id ? 'mix-blend-difference' : ''}`}
                           />
                           {item.title}
                         </div>
@@ -345,7 +354,7 @@ const Header = () => {
                 </div>
               ))}
               <div className="bg-primary">
-                <div className="py-2 max-w-[90%] m-auto flex justify-end">
+                <div className="py-2 max-w-[90%] m-auto flex justify-start">
                   <div className="flex items-center gap-5">
                     <Link href="#">
                       <Image
@@ -375,6 +384,35 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {showLogoutPopup && (
+        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-6 w-[85%] max-w-sm text-center">
+            <h3 className="text-lg font-semibold text-gray-800">Logout?</h3>
+            <p className="text-sm text-gray-600 pt-2">
+              Are you sure you want to logout?
+            </p>
+
+            <div className="flex gap-4 justify-center pt-5">
+              <button
+                onClick={() => setShowLogoutPopup(false)}
+                className="px-5 py-2 border rounded-md text-gray-700"
+              >
+                Cancel
+              </button>
+
+              <button
+                onClick={() => {
+                  handleLogout();
+                  setShowLogoutPopup(false);
+                }}
+                className="px-5 py-2 bg-primary text-white rounded-md"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

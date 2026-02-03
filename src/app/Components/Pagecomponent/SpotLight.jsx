@@ -85,10 +85,10 @@ const SpotLight = ({feature}) => {
                     />
                     <div className="px-6 py-6 md:py-0 flex items-center">
                       <div>
-                        <h2 className="text-3xl md:text-[35px] 2xl:text-[45px] text-white font-black md:leading-[45px] 2xl:leading-[55px] mb-2">
+                        <h2 className="text-2xl md:text-[35px] 2xl:text-[45px] text-white font-black md:leading-[45px] 2xl:leading-[55px] mb-2">
                           {data.spolight_title}
                         </h2>
-                        <span className="text-base 2xl:text-lg text-secondary font-light line-clamp-3">
+                        <span className="text-sm md:text-base 2xl:text-lg text-secondary font-light line-clamp-3">
                           {data.spotlight_description}
                         </span>
                       </div>
