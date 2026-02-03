@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="md:max-w-[90%] m-auto flex flex-col md:flex-row items-center justify-between">
             <div>
               <p className="text-sm md:text-base text-white">
-                © Punjab Titans {new Date().getFullYear()}  All rights reserved
+                © Punjab Titans {new Date().getFullYear()}  All rights Reserved to Puresports Pvt Ltd
               </p>
             </div>
             <div className="flex flex-col md:flex-row justify-end items-center gap-3 md:gap-18">
@@ -113,8 +113,8 @@ const Footer = () => {
               </div>
             </div> 
              <div className="py-3 bg-primary px-4">
-              <p className="text-[12px] text-center md:text-base text-white">
-                © Punjab Titans {new Date().getFullYear()}  All rights reserved
+              <p className="text-[11px] text-center md:text-base text-white">
+                © Punjab Titans {new Date().getFullYear()}  All rights Reserved to Puresports Pvt Ltd
               </p>
             </div>
         </div>

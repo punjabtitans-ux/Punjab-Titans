@@ -3,7 +3,7 @@ const imgbaseurl = "/images/news";
 export const newsdata = [
   {
     id: 1,
-    poster: `${imgbaseurl}/newsposter1.webp`,
+    poster: `${imgbaseurl}/newsposternew1.webp`,
     title: "Introducing the Punjab Kings Squad for the 2026 IPL Season",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     publish_date: "30 Dec 2025",
@@ -68,7 +68,7 @@ export const newsdata = [
   },
   {
     id: 2,
-    poster: `${imgbaseurl}/newsposter2.webp`,
+    poster: `${imgbaseurl}/newsposternew2.webp`,
     title:
       "IPL 2026 Auction: Punjab Kings Aim to Fine-Tune Their Squad in Abu Dhabi",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -78,7 +78,7 @@ export const newsdata = [
   },
   {
     id: 3,
-    poster: `${imgbaseurl}/newsposter1.webp`,
+    poster: `${imgbaseurl}/newsposternew3.webp`,
     title: "Introducing the Punjab Kings Squad for the 2026 IPL Season",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     publish_date: "30 Dec 2025",
@@ -87,7 +87,7 @@ export const newsdata = [
   },
   {
     id: 4,
-    poster: `${imgbaseurl}/newsposter2.webp`,
+    poster: `${imgbaseurl}/newsposternew4.webp`,
     title:
       "IPL 2026 Auction: Punjab Kings Aim to Fine-Tune Their Squad in Abu Dhabi",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",

@@ -50,7 +50,7 @@ const NewsDetail = () => {
         <div className="w-[70%]">
           <p className="text-sm text-white pb-2">{currentpage.created_at}</p>
           <Image
-            src={"/images/news/openingceremony.webp"}
+            src={currentpage.poster}
             alt=""
             width={1000}
             height={500}
